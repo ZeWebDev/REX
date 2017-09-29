@@ -12,15 +12,14 @@ rex -r "\.html$" ".php"
 The above will replace all .html extensions with .php
 
 **Notes:**
-Backslashes must either be escaped or in quotes.
-Anything with whitespaces must be in quotes.
+Backslashes and whitespaces must either be escaped or in quotes.
 
 ### Installation
 
 REX is just 1 binary file so to install it you can just copy it to to /usr/bin/
 
  ```sh
-sudo cp /path/to/rex /usr/bin
+sudo cp /path/to/rex /usr/bin   # Or anywhere in your PATH
 ```
 
 ### Building
@@ -30,7 +29,7 @@ REX is made with Crystal so you are going to need it to build it from source.
 Just run:
 
  ```sh
-crystal build rex.cr
+crystal build rex.cr --release
 ```
 
 
